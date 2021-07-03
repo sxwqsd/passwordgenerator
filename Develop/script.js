@@ -69,32 +69,32 @@ function generatePassword(){
   
   }
 
-  if(userChoices.upperChoice){
-    var upperIndex =  Math.floor(Math.random() * upper.length);
-    var upperResult = upper[upperIndex];
-    result += upperResult;
-    console.log(result);
-   
-  }
-  if(lower){
-    userChoices += lower
-    console.log(userChoices);
-  }
-
-  if(numeric) {
-    userChoices += numeric
-    console.log(userChoices);
-  }
-
-  if(special) {
-    userChoices += special
-    console.log(userChoices);
-  }
-  
-  
-
   for (var i = 0; 1 < passwordLength; i++){
     result += userChoices.concat(Math.floor(Math.random() * userChoices.passwordLength));
+
+    if(userChoices.upperChoice){
+      var upperIndex =  Math.floor(Math.random() * upper.length);
+      var upperResult = upper[upperIndex];
+      result += upperResult;
+      console.log(result);
+     
+    }
+    if(lower){
+      userChoices += lower
+      console.log(userChoices);
+    }
+  
+    if(numeric) {
+      userChoices += numeric
+      console.log(userChoices);
+    }
+  
+    if(special) {
+      userChoices += special
+      console.log(userChoices);
+    }
+
+
   }
   return result
 
