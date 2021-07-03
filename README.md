@@ -1,1 +1,2 @@
 # passwordgenerator
+This application is a password generator. When you click on the generate password button you are given a series of promts to answer. Based on your choices you are given a randomized password.
